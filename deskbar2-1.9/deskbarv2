@@ -1,0 +1,5 @@
+#!/bin/bash
+# by Leszek Lesner
+# released under the terms of GPL
+cd /usr/bin/Deskbar ;
+./deskbar.py

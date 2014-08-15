@@ -1,0 +1,97 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+
+
+
+
+configure: configure-stamp
+configure-stamp:
+	dh_testdir
+	# Add here commands to configure the package.
+
+	touch configure-stamp
+
+
+build: build-stamp
+
+build-stamp: configure-stamp  
+	dh_testdir
+	touch build-stamp
+
+clean: 
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp configure-stamp
+	dh_clean 
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k
+	dh_installdirs
+
+	mkdir -p $(CURDIR)/debian/deskbar2
+	cp deskbarv2 $(CURDIR)/debian/deskbar2/usr/bin/deskbarv2
+	#cp deskbarv2-mini $(CURDIR)/debian/deskbar2/usr/bin/deskbarv2-mini
+	mkdir -p $(CURDIR)/debian/deskbar2/usr/bin/Deskbar
+	cp -r Deskbar/* $(CURDIR)/debian/deskbar2/usr/bin/Deskbar/
+	cp Deskbarv2.desktop $(CURDIR)/debian/deskbar2/usr/share/applications/
+	mkdir -p $(CURDIR)/debian/deskbar2/usr/lib
+	cp libwnck* $(CURDIR)/debian/deskbar2/usr/lib/
+	mkdir -p $(CURDIR)/debian/deskbar2/usr/lib/pyshared/python2.6/gtk-2.0
+	cp wnck.so $(CURDIR)/debian/deskbar2/usr/lib/pyshared/python2.6/gtk-2.0/
+	mkdir -p $(CURDIR)/debian/deskbar2/usr/lib/python2.6/dist-packages/gtk-2.0
+	cp wnck.so $(CURDIR)/debian/deskbar2/usr/lib/python2.6/dist-packages/gtk-2.0/wnck.so
+	#mkdir -p $(CURDIR)/debian/deskbar2/etc/xdg/xfce4-session
+	#cp xfce4-session.rc $(CURDIR)/debian/deskbar2/etc/xdg/xfce4-session/
+	#cp tray.sh $(CURDIR)/debian/deskbar2/usr/bin/
+	mkdir -p $(CURDIR)/debian/deskbar2/etc/xdg/autostart
+	cp Stalonetray.desktop $(CURDIR)/debian/deskbar2/etc/xdg/autostart/tray.desktop
+
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs 
+	dh_installdocs
+	dh_installexamples
+#	dh_install
+#	dh_installmenu
+#	dh_installdebconf	
+#	dh_installlogrotate
+#	dh_installemacsen
+#	dh_installpam
+#	dh_installmime
+#	dh_python
+#	dh_installinit
+#	dh_installcron
+#	dh_installinfo
+	dh_installman
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+#	dh_perl
+#	dh_makeshlibs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure

@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.5 on Sat May 16 14:47:59 2009 -->
+<glade-interface>
+  <widget class="GtkMenu" id="rclick">
+    <property name="visible">True</property>
+    <child>
+      <widget class="GtkImageMenuItem" id="editM">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Edit menu</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_editM_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image1">
+            <property name="visible">True</property>
+            <property name="stock">gtk-edit</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="minM">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">MinMode</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_minM_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image2">
+            <property name="visible">True</property>
+            <property name="stock">gtk-goto-top</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="panelI">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Panel Integration</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_panelI_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image3">
+            <property name="visible">True</property>
+            <property name="stock">gtk-goto-bottom</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="sticky">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Sticky</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_sticky_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image5">
+            <property name="stock">gtk-goto-first</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="normal">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Normal</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_normal_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image6">
+            <property name="visible">True</property>
+            <property name="stock">gtk-goto-last</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkSeparatorMenuItem" id="separatormenuitem3">
+        <property name="visible">True</property>
+      </widget>
+    </child>
+	<child>
+      <widget class="GtkImageMenuItem" id="beenden">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Quit</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_beenden_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image4">
+            <property name="visible">True</property>
+            <property name="stock">gtk-quit</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkMenu" id="menu1">
+    <property name="visible">True</property>
+    <child>
+      <widget class="GtkImageMenuItem" id="About">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">About</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_About_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image7">
+            <property name="visible">True</property>
+            <property name="stock">gtk-dialog-info</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Search">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Search</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_Search_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image8">
+            <property name="visible">True</property>
+            <property name="stock">gtk-find</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Run">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Run ...</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_Run_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image9">
+            <property name="visible">True</property>
+            <property name="stock">gtk-execute</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Settings">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">All settings ...</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_Settings_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image10">
+            <property name="visible">True</property>
+            <property name="stock">gtk-preferences</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkSeparatorMenuItem" id="separatormenuitem1">
+        <property name="visible">True</property>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Close">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Quit</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_Close_activate"/>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image11">
+            <property name="visible">True</property>
+            <property name="stock">gtk-quit</property>
+            <property name="icon_size">1</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkSeparatorMenuItem" id="separatormenuitem2">
+        <property name="visible">True</property>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Office">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Office</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu2">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Abiword">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Wordprocessing</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Abiword_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image78">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">abiword</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gnumeric">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Spreadsheet</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gnumeric_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image79">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gnumeric</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="people">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">People</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_people_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image74">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">application-x-person</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Orage">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Calendar</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Orage_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image80">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">evolution-calendar</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image15">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">applications-office</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Dev">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Development</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu4">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Geany">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Geany</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Geany_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image17">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">geany</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image16">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">applications-development</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Graphic">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Graphics</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu5">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gimp">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Gimp</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gimp_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image19">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gimp</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gthumb">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Photomanagement</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gthumb_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image21">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gthumb</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Xsane">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">XSane Scannprogram</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Xsane_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image22">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">xsane</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image18">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">applications-graphics</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Multimedia">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Multimedia</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu6">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Audacious">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Audacious</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Audacious_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image24">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">audacious</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Audacity">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Audacity</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Audacity_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image25">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">audacity</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Avidemux">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Avidemux</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Avidemux_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image26">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">avidemux</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Brasero">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Brasero CD/DVD-Burning</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Brasero_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image27">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">brasero</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Encode">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Encode</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Encode_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image28">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">encode</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Recordmydesktop">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">gtk-recordMyDesktop</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Recordmydesktop_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image29">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gtk-recordmydesktop</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Rhythmbox">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Musicmanagement</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Rhythmbox_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image30">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">rhythmbox</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Totem">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Video-Player</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Totem_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image31">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">totem</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image23">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">multimedia</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Network">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Network</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu7">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Vinagre">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Remotedesktop</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Vinagre_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image33">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">vinagre</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Claws">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">E-Mail</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Claws_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image34">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">evolution-mail</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Firefox">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Web-Browser</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Firefox_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image35">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">web-browser</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gftp">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">GFTP</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gftp_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image36">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gftp</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Giver">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Giver</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Giver_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image37">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">giver</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Pidgin">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Pidgin Instant Messenger</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Pidgin_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image40">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">pidgin</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="PyNeighborhood">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Network</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_PyNeighborhood_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image41">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">network</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Transmission">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Transmission Bittorrent</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Transmission_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image42">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">transmission</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Xchat">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Xchat IRC</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Xchat_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image44">
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">xchat</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image32">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">applications-internet</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="menuitem1">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Games</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu8">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gamerbar">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Gamerbar</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gamerbar_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image46">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gamer-bar</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image45">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">applications-games</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="System">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">System</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu9">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Update">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Updatemanager</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Update_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image48">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">update-manager</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="DeviceManager">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Devicemanager</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_DeviceManager_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image51">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gnome-device-manager</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Services">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Services</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Services_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image52">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">network-server</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Usbcreator">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">USB-Disk Creator</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Usbcreator_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image53">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gnome-dev-harddisk-usb</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Fwizard">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">First Configuration Wizard</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Fwizard_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image54">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">fwizard</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Diskmanager">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Diskmanager</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Diskmanager_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image55">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">disk-manager</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Jockey">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Hardware-Drivers</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Jockey_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image56">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">jockey</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="MAGI2">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">MAGI 2</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_MAGI2_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image57">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">cyberghost</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Gparted">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Partition Editor</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Gparted_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image59">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">gparted</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Pulse">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Pulse</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Pulse_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image60">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">cpuload</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="StartUp">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">StartUp-Manager</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_StartUp_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image61">
+                    <property name="visible">True</property>
+                    <property name="stock">gtk-page-setup</property>
+                    <property name="icon_size">1</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Synaptic">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Synaptic Packagemanagment</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Synaptic_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image62">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">synaptic</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Taskmanager">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Taskmanager</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Taskmanager_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image63">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">utilities-system-monitor</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Zeebar">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Zeebar</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Zeebar_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image64">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">zeebar</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image47">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">xfce-system-settings</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+    <child>
+      <widget class="GtkImageMenuItem" id="Tools">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Tools</property>
+        <property name="use_underline">True</property>
+        <child>
+          <widget class="GtkMenu" id="menu10">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkImageMenuItem" id="Mousepad">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Mousepad</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Mousepad_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image67">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">mousepad</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Screenlets">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Screenlets</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Screenlets_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image68">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">screenlets</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Calc">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Calculator</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Calc_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image69">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">accessories-calculator</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Terminal">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Terminal</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Terminal_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image70">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">terminal</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Xpad">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Xpad</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Xpad_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image71">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">xpad</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+            <child>
+              <widget class="GtkImageMenuItem" id="Appfinder">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">more Apps</property>
+                <property name="use_underline">True</property>
+                <signal name="activate" handler="on_Appfinder_activate"/>
+                <child internal-child="image">
+                  <widget class="GtkImage" id="menu-item-image66">
+                    <property name="visible">True</property>
+                    <property name="icon_size">1</property>
+                    <property name="icon_name">xfce4-appfinder</property>
+                  </widget>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child internal-child="image">
+          <widget class="GtkImage" id="menu-item-image65">
+            <property name="visible">True</property>
+            <property name="icon_size">1</property>
+            <property name="icon_name">xfce-utils</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="MainWindow">
+    <property name="visible">True</property>
+    <property name="resizable">False</property>
+    <property name="default_width">117</property>
+    <property name="default_height">30</property>
+    <property name="skip_taskbar_hint">True</property>
+    <property name="skip_pager_hint">True</property>
+    <property name="decorated">False</property>
+    <property name="deletable">False</property>
+    <child>
+      <widget class="GtkVBox" id="vbox1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkEventBox" id="ZevenBtn">
+            <property name="visible">True</property>
+            <signal name="button_press_event" handler="on_ZevenBtn_button_press_event"/>
+            <signal name="enter_notify_event" handler="on_ZevenBtn_enter_notify_event"/>
+            <child>
+              <widget class="GtkImage" id="image1">
+                <property name="visible">True</property>
+                <property name="pixbuf">zevenos-menu.png</property>
+                <signal name="enter_notify_event" handler="on_image1_enter_notify_event"/>
+              </widget>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkToolbar" id="toolbar2">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="has_focus">True</property>
+            <property name="is_focus">True</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkHBox" id="hbox1">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkEventBox" id="Sound">
+                <property name="visible">True</property>
+                <signal name="button_press_event" handler="on_Sound_button_press_event"/>
+                <signal name="scroll_event" handler="on_Sound_scroll_event"/>
+                <child>
+                  <widget class="GtkImage" id="image2">
+                    <property name="visible">True</property>
+                    <property name="xpad">5</property>
+                    <property name="pixbuf">speaker.png</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEventBox" id="Network1">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">Networkmanager</property>
+                <signal name="button_press_event" handler="on_Network1_button_press_event"/>
+                <child>
+                  <widget class="GtkImage" id="image3">
+                    <property name="visible">True</property>
+                    <property name="xpad">5</property>
+                    <property name="ypad">5</property>
+                    <property name="pixbuf">network.png</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkEventBox" id="tdatum">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">Datum</property>
+                <signal name="button_press_event" handler="on_tdatum_button_press_event"/>
+                <child>
+                  <widget class="GtkLabel" id="tdate">
+                    <property name="visible">True</property>
+                    <property name="xpad">2</property>
+                    <property name="label" translatable="yes">Uhrzeit</property>
+                    <property name="wrap_mode">PANGO_WRAP_CHAR</property>
+                    <property name="max_width_chars">8</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkToolbar" id="toolbar1">
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkToolbar" id="toolbar3">
+            <property name="visible">True</property>
+            <property name="show_arrow">False</property>
+            <child>
+              <widget class="GtkToolButton" id="Tracker">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">Filemanager</property>
+                <property name="icon">tracker.png</property>
+                <signal name="clicked" handler="on_Tracker_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="Browser">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">Web-Browser</property>
+                <property name="icon">net+.png</property>
+                <signal name="clicked" handler="on_Browser_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="Music">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">Music-Player</property>
+                <property name="icon">music.png</property>
+                <signal name="clicked" handler="on_Music_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkToolButton" id="Mail">
+                <property name="visible">True</property>
+                <property name="tooltip" translatable="yes">E-Mail</property>
+                <property name="icon">mail.png</property>
+                <signal name="clicked" handler="on_Mail_clicked"/>
+              </widget>
+              <packing>
+                <property name="expand">True</property>
+                <property name="homogeneous">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkMenu" id="rdate">
+    <property name="visible">True</property>
+    <child>
+      <widget class="GtkMenuItem" id="showCal">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Show Calendar</property>
+        <property name="use_underline">True</property>
+        <signal name="activate" handler="on_showCal_activate"/>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

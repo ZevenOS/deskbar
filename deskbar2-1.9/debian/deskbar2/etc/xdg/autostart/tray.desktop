@@ -1,0 +1,13 @@
+
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Name=Stalonetray
+Comment=
+Categories=Application;
+Exec=tray.sh
+Icon=gnome-monitor
+Terminal=false
+StartupNotify=false
+GenericName=

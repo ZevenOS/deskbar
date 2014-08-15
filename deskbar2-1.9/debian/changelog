@@ -1,0 +1,198 @@
+deskbar2 (1.9-1ubuntu30) oneiric; urgency=low
+
+  * Fixed dependencies
+  * Fixed wnck install in the right directories
+
+ -- Leszek Lesner <leszek@zevenos.com>  Sun, 06 Nov 2011 16:35:27 +0000
+
+deskbar2 (1.9-1ubuntu29) maverick; urgency=low
+
+  * Implemented deskbar_position_left mode (activate it with a empty file in ~/.deskbar_position_left)
+  * fixed switch to normal mode
+  * fixed switch to min_mode
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 22 Jun 2011 13:50:47 +0200
+
+deskbar2 (1.9-1ubuntu28) maverick; urgency=low
+
+  * Fixed problems with natty
+
+ -- Leszek Lesner <leszek@zevenos.com> Sun, 29 May 2011 18:16:52 +0200
+
+deskbar2 (1.9-1ubuntu27) maverick; urgency=low
+
+  * Included dynamic menu in deskbar.py
+  * Better dynamic menu cache handling
+
+ -- Leszek Lesner <leszek@zevenos.com> Thu, 12 May 2011 15:39:58 +0200
+
+deskbar2 (1.9-1ubuntu26) maverick; urgency=low
+
+  * Added Right click context menus for quicklaunch items
+
+ -- Leszek Lesner <leszek@zevenos.com> Sat, 06 Nov 2010 10:01:55 +0000
+
+deskbar2 (1.9-1ubuntu25) maverick; urgency=low
+
+  * Added mute option for the sound menu
+
+ -- Leszek Lesner <leszek@zevenos.com> Fri, 29 Oct 2010 17:37:30 +0200
+
+deskbar2 (1.9-1ubuntu24) maverick; urgency=low
+
+  * Updated german translation
+  * Added 'Change Time' option in the clock menu
+
+ -- Leszek Lesner <leszek@zevenos.com> Fri, 29 Oct 2010 15:12:45 +0000
+
+deskbar2 (1.9-1ubuntu23) maverick; urgency=low
+
+  * activated tray autostart again
+
+ -- Leszek Lesner <leszek@zevenos.com>  Fri, 15 Oct 2010 18:17:31 +0200
+
+deskbar2 (1.9-1ubuntu22) maverick; urgency=low
+
+  * added new dynamic menu
+  * added new zevenos-menu button
+
+ -- Leszek Lesner <leszek@zevenos.com>  Wed, 18 Aug 2010 17:00:45 +0200
+
+deskbar2 (1.9-1ubuntu21) karmic; urgency=low
+
+  * fixed icon size in static menu
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Thu, 11 Feb 2010 11:34:48 +0100
+
+deskbar2 (1.9-1ubuntu20) karmic; urgency=low
+
+  * fixed static menu
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Thu, 11 Feb 2010 11:19:35 +0100
+
+deskbar2 (1.9-1ubuntu19) karmic; urgency=low
+
+  * cleaned up the code
+  * removed unnecessary .glade and .py files
+  * integrated mini-mode and toolbarless mode
+  * updated the main .glade file
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Sat, 06 Feb 2010 16:08:03 +0100
+
+deskbar2 (1.9-1ubuntu18) karmic; urgency=low
+
+  * added new dynamic menu using ~/.menu folder structure and *.desktop files
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Fri, 22 Jan 2010 15:35:51 +0100
+
+deskbar2 (1.9-1ubuntu17) karmic; urgency=low
+
+  * updated static menu and magi2 link
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Wed, 11 Nov 2009 15:12:13 +0100
+
+deskbar2 (1.9-1ubuntu16) karmic; urgency=low
+
+  * updated static menu for ZevenOS 2.0
+
+ -- Leszek Lesner <leszek@lenovo-zevenos2>  Fri, 30 Oct 2009 14:12:40 +0100
+
+deskbar2 (1.9-1ubuntu15) karmic; urgency=low
+
+  * fixed static menu for ZevenOS 2.0
+
+ -- leszek <leszek@debian>  Tue, 06 Oct 2009 13:28:09 +0200
+
+deskbar2 (1.9-1ubuntu14) karmic; urgency=low
+
+  * updated static menu
+
+ -- leszek <leszek@debian>  Sat, 03 Oct 2009 18:58:28 +0200
+
+deskbar2 (1.9-1ubuntu13) karmic; urgency=low
+
+  * updated tracker icon
+
+ -- leszek <leszek@debian>  Mon, 21 Sep 2009 13:34:55 +0200
+
+deskbar2 (1.9-1ubuntu12) karmic; urgency=low
+
+  * updated icons
+
+ -- leszek <leszek@debian>  Sun, 20 Sep 2009 13:31:37 +0200
+
+deskbar2 (1.9-1ubuntu11) karmic; urgency=low
+
+  * integrated magi-kit
+
+ -- leszek <leszek@debian>  Wed, 29 Jul 2009 11:59:31 +0200
+
+deskbar2 (1.9-1ubuntu10) karmic; urgency=low
+
+  * fixed seperateritems
+
+ -- Leszek Lesner <leszek@zevenos-dev>  Sat, 20 Jun 2009 12:03:33 +0200
+
+deskbar2 (1.9-1ubuntu9) jaunty; urgency=low
+
+  * updated static .deskbar-newmenu
+  * added translations for english and german
+
+ -- Leszek Lesner <leszek@leszek-lenovo>  Sat, 16 May 2009 13:45:40 +0200
+
+deskbar2 (1.9-1ubuntu8) jaunty; urgency=low
+
+  * updated to jaunty
+
+ -- Leszek Lesner <leszek@leszek@zevenos.com>  Fri, 15 May 2009 18:16:02 +0200
+
+deskbar2 (1.9-1ubuntu7) intrepid; urgency=low
+
+  * Added right click menu to show calendar
+
+ -- Leszek Lesner <leszek@leszek-lenovo>  Mon, 11 May 2009 17:20:34 +0200
+
+deskbar2 (1.9-1ubuntu6) intrepid; urgency=low
+
+  * Added direct volume control via mouse scrolling
+  * Updated clock to show date tooltip
+
+ -- Leszek Lesner <leszek@leszek-lenovo>  Sat, 09 May 2009 18:05:35 +0200
+
+deskbar2 (1.9-1ubuntu5) jaunty; urgency=low
+
+  * Added and set "bring to front" as standard while hovering the ZevenOS Button
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Fri, 24 Apr 2009 23:33:47 +0200
+
+deskbar2 (1.9-1ubuntu4) jaunty; urgency=low
+
+  * Added new menu (~/.deskbar_newmenu to activate)
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Mon, 30 Mar 2009 21:29:28 +0200
+
+deskbar2 (1.9-1ubuntu3) jaunty; urgency=low
+
+  * Added Sticky option 
+  * Fixed Panel Integration
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Sat, 14 Mar 2009 18:55:28 +0100
+
+deskbar2 (1.9-1ubuntu2) intrepid; urgency=low
+
+  * Fixed positioning of stalonetray
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Sat, 14 Feb 2009 18:27:55 +0100
+
+deskbar2 (1.9-1ubuntu1) intrepid; urgency=low
+
+  * Added Tasklist and Notificationarea based on stalonetray
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Wed, 11 Feb 2009 21:00:51 +0100
+
+deskbar2 (1.9-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Leszek Lesner <leszek@zebuntu.com>  Thu, 05 Feb 2009 15:31:17 +0100
+

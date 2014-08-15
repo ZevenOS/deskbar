@@ -1,0 +1,135 @@
+#!/usr/bin/env python
+#
+# Copyright (C) 2010  Leszek Lesner
+# Copyright (C) 2008  Red Hat, Inc.
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Author(s): Luke Macken <lmacken@redhat.com>
+#            Miroslav Lichvar <mlichvar@redhat.com>
+#            Leszek Lesner <leszek@zevenos.com>
+
+
+import gmenu, re, sys, os, gtk, pygtk 
+from xml.sax.saxutils import escape
+
+def menuitem_response(self,entry_name):
+	cmd = d[entry_name]
+	os.popen(cmd + " &")
+	print "os.popen(%s)" % cmd
+	gtk.main_quit()
+
+def menuitembuildin_response(self,cmd):
+	os.popen(cmd + " &")
+	gtk.main_quit()
+
+def menuitem_quit(self):
+	gtk.main_quit()
+
+def walk_menu(entry):
+	if entry.get_type() == gmenu.TYPE_DIRECTORY:
+		print 'id="%s" label="%s" icon="%s"'  % (entry.menu_id, entry.get_name(), entry.get_icon())
+		submenu = gtk.Menu()
+		folder = gtk.ImageMenuItem(entry.get_name())
+		try:
+			j = gtk.Image()
+			j.set_from_icon_name(entry.get_icon(), gtk.ICON_SIZE_MENU)
+			folder.set_image(j)
+		except:
+			try:
+				k = gtk.gdk.pixbuf_new_from_file_at_size(entry.get_icon(), 16, 16)
+				j = gtk.Image()
+				j.set_from_pixbuf(k)
+				folder.set_image(j)
+			except:	
+				print "Fehler Menu Icon von Dateiname"
+			print "Fehler Menu Icon"
+		m.append(folder)
+		map(walk_menu, entry.get_contents())
+		folder.set_submenu(submenu)
+	elif entry.get_type() == gmenu.TYPE_ENTRY and not entry.is_excluded:
+		desktopfile = gtk.ImageMenuItem(None)
+		print '	item label="%s" icon="%s"' % (entry.get_name(), entry.get_icon())
+		command = re.sub(' [^ ]*%[fFuUdDnNickvm]', '', entry.get_exec())
+		if entry.launch_in_terminal:
+			command = 'xterm -title "%s" -e %s' %  (entry.get_name(), command)
+		print '	command="%s"' % command
+		d[entry.get_name()] = command
+       		desktopfile = gtk.ImageMenuItem(entry.get_name())
+		try:
+			i = gtk.Image()
+			if str(entry.get_icon()).startswith('/'):
+				#print "Hier ist ein Icon, dass nicht aus dem Icon-Theme gelesen wird" ## DEBUG ##
+				k = gtk.gdk.pixbuf_new_from_file_at_size(entry.get_icon(), 16, 16)
+				i.set_from_pixbuf(k)
+			elif str(entry.get_icon()).endswith('.png') or str(entry.get_icon()).endswith('.xpm'):
+				try:
+					k = gtk.gdk.pixbuf_new_from_file_at_size("/usr/share/pixmaps/" + entry.get_icon(), 16, 16)
+					i.set_from_pixbuf(k)
+				except:
+					ico=str(entry.get_icon()).rstrip(".png")
+					i.set_from_icon_name(ico, gtk.ICON_SIZE_MENU)
+			else:
+				i.set_from_icon_name(entry.get_icon(), gtk.ICON_SIZE_MENU)
+			desktopfile.set_image(i)
+		except:
+			print "Fehler Icon Item: ", sys.exc_info()
+       		desktopfile.connect("activate", menuitem_response,entry.get_name())
+		global submenu
+       		submenu.append(desktopfile)
+
+if len(sys.argv) > 1:
+	menu = sys.argv[1] + '.menu'
+else:
+	menu = 'applications.menu'
+
+d = {}
+m = gtk.Menu()
+folder = gtk.MenuItem(None)
+submenu = gtk.Menu()
+map(walk_menu, gmenu.lookup_tree(menu).root.get_contents())
+
+# create menu
+item = gtk.ImageMenuItem(gtk.STOCK_DIALOG_INFO)
+item.get_children()[0].set_label("About")
+item.connect("activate",menuitembuildin_response,"about")
+m.insert(item,0)
+item = gtk.ImageMenuItem(gtk.STOCK_FIND)
+item.connect("activate",menuitembuildin_response,"/usr/bin/magi-kit.py search")
+m.insert(item,1)
+item = gtk.ImageMenuItem(gtk.STOCK_EXECUTE)
+item.connect("activate",menuitembuildin_response,"xfrun4")
+m.insert(item,2)
+item = gtk.ImageMenuItem(gtk.STOCK_PREFERENCES)
+item.connect("activate",menuitembuildin_response,"magi2 -settings")
+m.insert(item,3)
+item=gtk.SeparatorMenuItem()
+m.insert(item,4)
+item = gtk.ImageMenuItem(gtk.STOCK_QUIT)
+item.connect("activate", menuitembuildin_response,"xfce4-session-logout")
+m.insert(item,5)
+item=gtk.SeparatorMenuItem()
+m.insert(item,6)
+
+m.connect("deactivate", menuitem_quit)
+
+m.show_all()
+m.popup(None,None,None,1,0)
+
+def main():
+       	gtk.main()
+
+if __name__ == "__main__":
+   main()
+

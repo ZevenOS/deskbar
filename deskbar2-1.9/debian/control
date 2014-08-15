@@ -1,0 +1,13 @@
+Source: deskbar2
+Section: system
+Priority: extra
+Maintainer: Leszek Lesner <leszek@zebuntu.com>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.7.3
+Homepage: <http://www.zevenos.com>
+
+Package: deskbar2
+Architecture: any
+Depends: python2.6, libwnck22, python-wnck, trayer, python-gmenu
+Description: BeOS Clone of the Deskbar
+ A BeOS Clone of the Deskbar

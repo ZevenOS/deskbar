@@ -1,0 +1,11 @@
+Package: deskbar2
+Version: 1.9-1ubuntu30
+Architecture: i386
+Maintainer: Leszek Lesner <leszek@zebuntu.com>
+Installed-Size: 852
+Depends: python2.6, libwnck22, python-wnck, trayer, python-gmenu
+Section: system
+Priority: extra
+Homepage: <http://www.zevenos.com>
+Description: BeOS Clone of the Deskbar
+ A BeOS Clone of the Deskbar

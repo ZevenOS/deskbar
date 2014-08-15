@@ -1,0 +1,329 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-16 13:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: deskbar.glade.h:1
+msgid "Wordprocessing"
+msgstr ""
+
+#: deskbar.glade.h:2
+msgid "About"
+msgstr ""
+
+#: deskbar.glade.h:3
+msgid "Adjust Deskbarlinks"
+msgstr ""
+
+#: deskbar.glade.h:4
+msgid "All settings ..."
+msgstr ""
+
+#: deskbar.glade.h:5
+msgid "Audacious"
+msgstr ""
+
+#: deskbar.glade.h:6
+msgid "Audacity"
+msgstr ""
+
+#: deskbar.glade.h:7
+msgid "Avidemux"
+msgstr ""
+
+#: deskbar.glade.h:8
+msgid "Brasero CD/DVD-Burning"
+msgstr ""
+
+#: deskbar.glade.h:9
+msgid "Calculator"
+msgstr ""
+
+#: deskbar.glade.h:10
+msgid "Calendar"
+msgstr ""
+
+#: deskbar.glade.h:11
+msgid "Claws Mail"
+msgstr ""
+
+#: deskbar.glade.h:12
+msgid "Datum"
+msgstr ""
+
+#: deskbar.glade.h:13
+msgid "Theme-Manager"
+msgstr ""
+
+#: deskbar.glade.h:14
+msgid "Development"
+msgstr ""
+
+#: deskbar.glade.h:15
+msgid "Devicemanager"
+msgstr ""
+
+#: deskbar.glade.h:16
+msgid "Diskmanager"
+msgstr ""
+
+#: deskbar.glade.h:17
+msgid "E-Mail"
+msgstr ""
+
+#: deskbar.glade.h:18
+msgid "Edit menu"
+msgstr ""
+
+#: deskbar.glade.h:19
+msgid "Encode"
+msgstr ""
+
+#: deskbar.glade.h:20
+msgid "Encryption"
+msgstr ""
+
+#: deskbar.glade.h:21
+msgid "Filemanager"
+msgstr ""
+
+#: deskbar.glade.h:22
+msgid "Web-Browser"
+msgstr ""
+
+#: deskbar.glade.h:23
+msgid "First Configuration Wizard"
+msgstr ""
+
+#: deskbar.glade.h:24
+msgid "GFTP"
+msgstr ""
+
+#: deskbar.glade.h:25
+msgid "Gamerbar"
+msgstr ""
+
+#: deskbar.glade.h:26
+msgid "Games"
+msgstr ""
+
+#: deskbar.glade.h:27
+msgid "Geany"
+msgstr ""
+
+#: deskbar.glade.h:28
+msgid "Gimp"
+msgstr ""
+
+#: deskbar.glade.h:29
+msgid "Giver"
+msgstr ""
+
+#: deskbar.glade.h:30
+msgid "Gnome PPP"
+msgstr ""
+
+#: deskbar.glade.h:31
+msgid "Spreadsheet"
+msgstr ""
+
+#: deskbar.glade.h:32
+msgid "GpicView"
+msgstr ""
+
+#: deskbar.glade.h:33
+msgid "Graphics"
+msgstr ""
+
+#: deskbar.glade.h:34
+msgid "Photomanagement"
+msgstr ""
+
+#: deskbar.glade.h:35
+msgid "Hardware-Drivers"
+msgstr ""
+
+#: deskbar.glade.h:36
+msgid "Loginmanager"
+msgstr ""
+
+#: deskbar.glade.h:37
+msgid "MAGI 2"
+msgstr ""
+
+#: deskbar.glade.h:38
+msgid "MinMode"
+msgstr ""
+
+#: deskbar.glade.h:39
+msgid "Mousepad"
+msgstr ""
+
+#: deskbar.glade.h:40
+msgid "Multimedia"
+msgstr ""
+
+#: deskbar.glade.h:41
+msgid "Music-Player"
+msgstr ""
+
+#: deskbar.glade.h:42
+msgid "Network"
+msgstr ""
+
+#: deskbar.glade.h:43
+msgid "Networkmanager"
+msgstr ""
+
+#: deskbar.glade.h:44
+msgid "Normal"
+msgstr ""
+
+#: deskbar.glade.h:45
+msgid "Office"
+msgstr ""
+
+#: deskbar.glade.h:46
+msgid "Panel Integration"
+msgstr ""
+
+#: deskbar.glade.h:47
+msgid "Partition Editor"
+msgstr ""
+
+#: deskbar.glade.h:48
+msgid "Pidgin Instant Messenger"
+msgstr ""
+
+#: deskbar.glade.h:49
+msgid "Powermanager"
+msgstr ""
+
+#: deskbar.glade.h:50
+msgid "Pulse"
+msgstr ""
+
+#: deskbar.glade.h:51
+msgid "Quit"
+msgstr ""
+
+#: deskbar.glade.h:52
+msgid "Remotedesktop"
+msgstr ""
+
+#: deskbar.glade.h:53
+msgid "Musicmanagement"
+msgstr ""
+
+#: deskbar.glade.h:54
+msgid "Run ..."
+msgstr ""
+
+#: deskbar.glade.h:55
+msgid "Screenlets"
+msgstr ""
+
+#: deskbar.glade.h:56
+msgid "Screensaver"
+msgstr ""
+
+#: deskbar.glade.h:57
+msgid "Search"
+msgstr ""
+
+#: deskbar.glade.h:58
+msgid "Services"
+msgstr ""
+
+#: deskbar.glade.h:59
+msgid "Settings"
+msgstr ""
+
+#: deskbar.glade.h:60
+msgid "Show Calendar"
+msgstr ""
+
+#: deskbar.glade.h:61
+msgid "StartUp-Manager"
+msgstr ""
+
+#: deskbar.glade.h:62
+msgid "Sticky"
+msgstr ""
+
+#: deskbar.glade.h:63
+msgid "Synaptic Packagemanagment"
+msgstr ""
+
+#: deskbar.glade.h:64
+msgid "System"
+msgstr ""
+
+#: deskbar.glade.h:65
+msgid "Taskmanager"
+msgstr ""
+
+#: deskbar.glade.h:66
+msgid "Terminal"
+msgstr ""
+
+#: deskbar.glade.h:67
+msgid "Tools"
+msgstr ""
+
+#: deskbar.glade.h:68
+msgid "Video-Player"
+msgstr ""
+
+#: deskbar.glade.h:69
+msgid "Transmission Bittorrent"
+msgstr ""
+
+#: deskbar.glade.h:70
+msgid "USB-Disk Creator"
+msgstr ""
+
+#: deskbar.glade.h:71
+msgid "Uhrzeit"
+msgstr ""
+
+#: deskbar.glade.h:72
+msgid "Updatemanager"
+msgstr ""
+
+#: deskbar.glade.h:74
+msgid "XSane Scannprogram"
+msgstr ""
+
+#: deskbar.glade.h:75
+msgid "Xchat IRC"
+msgstr ""
+
+#: deskbar.glade.h:76
+msgid "Xpad"
+msgstr ""
+
+#: deskbar.glade.h:77
+msgid "Zeebar"
+msgstr ""
+
+#: deskbar.glade.h:78
+msgid "gtk-recordMyDesktop"
+msgstr ""
+
+#: deskbar.glade.h:79
+msgid "more Apps"
+msgstr ""
